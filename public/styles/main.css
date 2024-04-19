@@ -1,0 +1,40 @@
+body{
+    background-color: black;
+}
+
+.logo{
+    height: 50px;
+    width: 150px;
+}
+
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.nav-icon{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.nav-link{
+    text-align: center;
+}
+
+.divider{
+    height: 50px;
+}
+
+.blog{
+    font-size: 200px;
+}
+
+.post-img{
+    height: 50%;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
