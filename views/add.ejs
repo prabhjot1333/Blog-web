@@ -1,0 +1,29 @@
+<%- include("partials/header.ejs") %>
+<!-- header top -->
+
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4 rounded" src="images/writer.jpg" alt="" width="300" height="400">
+    <h1 class="display-5 fw-bold text-white">Add your blog </h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4 text-white">Share your knowledge with others</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <form action="/submit" method="POST"> 
+        <div class="mb-3">
+            <label for="heading" class="form-label text-white mb-3">Blog Heading</label> 
+            <input type="text" class="form-control mb-3" id="heading" name="heading" aria-describedby="emailHelp">
+        </div>
+        <div class="mb-3">
+            <label for="message" class="form-label text-white mb-3">Message</label> 
+            <textarea class="form-control mb-3" id="message" name="message"></textarea> 
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+<!-- footer -->
+<%- include("partials/footer.ejs") %>
